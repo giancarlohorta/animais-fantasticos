@@ -11,6 +11,7 @@ import initFetchAnimais from "./modules/fetch-animais.js";
 import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 
 initMenuMobile();
+
 initScrollSuave();
 initAnimationScroll();
 initTabNav();
