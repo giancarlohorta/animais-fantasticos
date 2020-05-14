@@ -8,6 +8,7 @@ import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import ScrollAnima from "./modules/scroll-anima.js";
 import MenuMobile from "./modules/menu-mobile.js";
+import SlideNav from "./modules/slide-nav.js";
 
 import Funcionamento from "./modules/funcionamento.js";
 
@@ -47,3 +48,7 @@ funcionamento.init();
 
 fetchAnimais("../../animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btn-preco");
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+slide.addControl(".custon-controls");
